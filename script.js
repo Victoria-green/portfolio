@@ -1,33 +1,38 @@
-// Small JS for nav toggle, smooth scroll, and year
-document.addEventListener('DOMContentLoaded', function () {
-  const nav = document.getElementById('primary-nav');
-  const btn = document.getElementById('navToggle');
+document.addEventListener('DOMContentLoaded', () => {
+  
+  // 1. Update Footer Year
+  const yearSpan = document.getElementById('year');
+  if (yearSpan) {
+    yearSpan.textContent = new Date().getFullYear();
+  }
 
-  btn.addEventListener('click', () => {
-    const open = btn.getAttribute('aria-expanded') === 'true';
-    btn.setAttribute('aria-expanded', String(!open));
-    nav.dataset.open = String(!open);
-  });
+  // 2. Mobile Navigation Toggle
+  const navToggle = document.getElementById('navToggle');
+  const primaryNav = document.getElementById('primary-nav');
 
-  // Smooth scroll for in-page links
-  document.querySelectorAll('a[href^="#"]').forEach(a=>{
-    a.addEventListener('click', function(e){
-      const targetId = this.getAttribute('href').slice(1);
-      const target = document.getElementById(targetId);
-      if(target){
-        e.preventDefault();
-        target.scrollIntoView({behavior:'smooth', block:'start'});
-        // close mobile nav if open
-        if(window.innerWidth < 900){
-          btn.setAttribute('aria-expanded','false');
-          nav.dataset.open = 'false';
-        }
-      }
+  if (navToggle && primaryNav) {
+    navToggle.addEventListener('click', () => {
+      const isExpanded = navToggle.getAttribute('aria-expanded') === 'true';
+      
+      // Toggle accessibility attribute
+      navToggle.setAttribute('aria-expanded', !isExpanded);
+      
+      // Toggle class for CSS visibility
+      primaryNav.classList.toggle('active');
+      
+      // Change icon (optional: switch between ☰ and ✕)
+      navToggle.textContent = isExpanded ? '☰' : '✕';
+    });
+  }
+
+  // 3. Close mobile menu when a link is clicked
+  const navLinks = document.querySelectorAll('.primary-nav a');
+  navLinks.forEach(link => {
+    link.addEventListener('click', () => {
+      primaryNav.classList.remove('active');
+      navToggle.setAttribute('aria-expanded', 'false');
+      navToggle.textContent = '☰';
     });
   });
 
-  // Current year in footer
-  const y = new Date().getFullYear();
-  const yearEl = document.getElementById('year');
-  if(yearEl) yearEl.textContent = y;
 });
