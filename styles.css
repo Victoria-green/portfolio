@@ -183,3 +183,62 @@ cite { display: block; margin-top: 1rem; font-style: normal; color: var(--accent
   .hero-photos { height: 300px; }
   .testimonials { grid-template-columns: 1fr; }
 }0}
+
+/* Qualifications Grid */
+.qual-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+.qual-card {
+  background: #111111;
+  padding: 2rem;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.qual-card:hover {
+  border-color: var(--accent);
+  transform: translateY(-5px);
+}
+
+.qual-card.featured {
+  border-left: 4px solid var(--accent); /* Highlights your degree */
+}
+
+.qual-icon {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.qual-card span {
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--accent);
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.qual-card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.2rem;
+  color: var(--text);
+}
+
+.qual-card p {
+  font-size: 0.95rem;
+  color: var(--text-dim);
+  margin-bottom: 1rem;
+}
+
+.qual-card small {
+  font-size: 0.8rem;
+  color: #666;
+  line-height: 1.4;
+  margin-top: auto; /* Pushes the description to the bottom */
+}
