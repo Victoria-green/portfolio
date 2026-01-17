@@ -1,14 +1,17 @@
 document.addEventListener('DOMContentLoaded', () => {
-    // Set Year
-    document.getElementById('year').textContent = new Date().getFullYear();
+    // Auto-update copyright year
+    const yearSpan = document.getElementById('year');
+    if(yearSpan) yearSpan.textContent = new Date().getFullYear();
 
-    // Mobile Toggle
+    // Mobile Toggle Logic
     const toggle = document.getElementById('navToggle');
     const nav = document.getElementById('primary-nav');
     
-    if(toggle) {
+    if(toggle && nav) {
         toggle.addEventListener('click', () => {
-            nav.style.display = nav.style.display === 'block' ? 'none' : 'block';
+            const isVisible = nav.style.display === 'block';
+            nav.style.display = isVisible ? 'none' : 'block';
+            toggle.textContent = isVisible ? '☰' : '✕';
         });
     }
 });
