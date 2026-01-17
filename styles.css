@@ -60,6 +60,56 @@ a { text-decoration: none; color: var(--accent); }
   .nav-toggle{display:block;}
 }
 
+/* STATS ROW */
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1.5rem;
+  text-align: center;
+}
+
+.stat h3 {
+  font-size: 2rem;
+  color: var(--accent);
+  margin-bottom: 0.2rem;
+}
+
+.stat p {
+  color: #bdbdbd;
+  font-size: 0.95rem;
+}
+
+/* TIMELINE ICONS */
+.timeline-item {
+  position: relative;
+  padding-left: 2rem;
+}
+
+.timeline-icon {
+  position: absolute;
+  left: -1.2rem;
+  top: 0.3rem;
+  font-size: 1.2rem;
+  background: #111;
+  border-radius: 50%;
+  padding: 0.3rem;
+}
+
+/* META TEXT */
+.timeline-meta {
+  color: #bdbdbd;
+  font-size: 0.95rem;
+  margin-bottom: 0.5rem;
+}
+
+/* SUMMARY BOX */
+.experience-summary {
+  margin-top: 2rem;
+  padding: 1.2rem;
+  background: #111;
+  border-left: 3px solid var(--accent);
+  border-radius: 6px;
+}
 
 
 
