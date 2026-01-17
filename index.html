@@ -4,13 +4,15 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Victoria Green — Portfolio</title>
-  <link rel="stylesheet" href="styles.css">
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
   <!-- Animate on Scroll -->
   <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
@@ -32,8 +34,8 @@
   </nav>
 
   <!-- HERO -->
-  <section id="home" class="hero">
-    <div class="container hero-content" data-aos="fade-up">
+  <section id="home" class="hero" data-aos="fade-up">
+    <div class="container hero-content">
       <h1>Hello, I’m <span>Victoria</span></h1>
       <p>Delivering efficient administrative, operations, and customer support with excellence and professionalism.</p>
       <a href="#contact" class="btn btn-primary">Hire Me</a>
@@ -54,31 +56,36 @@
         <div class="about-buttons">
           <a href="https://www.linkedin.com/in/yourlinkedin" target="_blank" class="btn btn-outline">LinkedIn</a>
           <a href="Victoria-Green-Resume.pdf" target="_blank" class="btn btn-light">Download Resume</a>
+          <a href="#contact" class="btn btn-primary">Hire Me</a>
         </div>
       </div>
     </div>
   </section>
 
-<!-- SKILLS / TOOLS -->
-<div class="skills-grid">
-  <div class="skill-card" data-aos="fade-up">
-    <h5>Google Workspace</h5>
-    <div class="skill-bar"><span data-skill="95%"></span></div>
-  </div>
-  <div class="skill-card" data-aos="fade-up" data-aos-delay="100">
-    <h5>CRM & Client Support</h5>
-    <div class="skill-bar"><span data-skill="90%"></span></div>
-  </div>
-  <div class="skill-card" data-aos="fade-up" data-aos-delay="200">
-    <h5>Project Management</h5>
-    <div class="skill-bar"><span data-skill="85%"></span></div>
-  </div>
-  <div class="skill-card" data-aos="fade-up" data-aos-delay="300">
-    <h5>HR & Onboarding</h5>
-    <div class="skill-bar"><span data-skill="88%"></span></div>
-  </div>
-</div>
-
+  <!-- SKILLS / TOOLS -->
+  <section id="skills" class="section-dark">
+    <div class="container">
+      <h2 data-aos="fade-up">Skills & Workflow Tools</h2>
+      <div class="skills-grid">
+        <div class="skill-card" data-aos="fade-up">
+          <h5>Google Workspace</h5>
+          <div class="skill-bar"><span data-skill="95%"></span></div>
+        </div>
+        <div class="skill-card" data-aos="fade-up" data-aos-delay="100">
+          <h5>CRM & Client Support</h5>
+          <div class="skill-bar"><span data-skill="90%"></span></div>
+        </div>
+        <div class="skill-card" data-aos="fade-up" data-aos-delay="200">
+          <h5>Project Management</h5>
+          <div class="skill-bar"><span data-skill="85%"></span></div>
+        </div>
+        <div class="skill-card" data-aos="fade-up" data-aos-delay="300">
+          <h5>HR & Onboarding</h5>
+          <div class="skill-bar"><span data-skill="88%"></span></div>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <!-- QUALIFICATIONS -->
   <section id="qualifications" class="section-dark">
@@ -87,7 +94,7 @@
       <div class="timeline">
         <div class="timeline-item" data-aos="fade-right">
           <h5>BSc Biochemistry</h5>
-          <p>Rivers State University — 2020</p>
+          <p>Rivers State University — 2024</p>
         </div>
         <div class="timeline-item" data-aos="fade-left">
           <h5>Virtual Assistant Certification</h5>
@@ -122,17 +129,22 @@
     </div>
   </section>
 
-<!-- PORTFOLIO -->
-<div class="portfolio-grid">
-  <div class="portfolio-card" data-aos="fade-up">
-    <h5>Workflow Standardization</h5>
-    <p>Reduced admin overhead by 30%.</p>
-  </div>
-  <div class="portfolio-card" data-aos="fade-up" data-aos-delay="100">
-    <h5>Customer Service</h5>
-    <p>Improved customer satisfaction from 82% to 92%.</p>
-  </div>
-</div>
+  <!-- PORTFOLIO -->
+  <section id="portfolio" class="section-dark">
+    <div class="container">
+      <h2 data-aos="fade-up">Portfolio</h2>
+      <div class="portfolio-grid">
+        <div class="portfolio-card" data-aos="fade-up">
+          <h5>Workflow Standardization</h5>
+          <p>Reduced admin overhead by 30%.</p>
+        </div>
+        <div class="portfolio-card" data-aos="fade-up" data-aos-delay="100">
+          <h5>Customer Service</h5>
+          <p>Improved customer satisfaction from 82% to 92%.</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <!-- CONTACT -->
   <section id="contact" class="section-dark">
@@ -158,6 +170,7 @@
   </script>
 </body>
 </html>
+
 
 
 
