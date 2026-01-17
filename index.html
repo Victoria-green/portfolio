@@ -1,19 +1,36 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
   <title>Victoria Green — Operations & People Management</title>
+  <meta name="description" content="Victoria Green — Virtual Assistant, Administrative, HR, and Customer Service Professional.">
+
+  <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
   <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
 
   <header class="site-header">
     <div class="container header-inner">
       <a class="brand" href="#home">Victoria Green</a>
-      <button class="nav-toggle" aria-expanded="false" id="navToggle">☰</button>
+
+      <button 
+        class="nav-toggle" 
+        id="navToggle" 
+        aria-expanded="false" 
+        aria-controls="primary-nav"
+        aria-label="Toggle navigation">
+        ☰
+      </button>
+
       <nav id="primary-nav" class="primary-nav">
         <ul>
           <li><a href="#about">About</a></li>
@@ -27,23 +44,33 @@
   </header>
 
   <main>
+
     <section id="home" class="hero">
       <div class="container hero-grid">
+
         <div class="hero-content">
-          <h1>Welcome to my <br><span>Professional Portfolio.</span></h1>
+          <h1>
+            Welcome to my <br>
+            <span>Professional Portfolio.</span>
+          </h1>
+
           <p class="lead">
-            This collection showcases my experience in virtual assistance, administrative support, HR, and customer service—demonstrating my ability to support efficient operations through structured workflows and reliable execution.
+            This collection showcases my experience in virtual assistance, administrative support, HR, and customer service, demonstrating my ability to support efficient operations through structured workflows and reliable execution.
           </p>
+
           <div class="hero-btns">
             <a href="#work" class="button">View Portfolio</a>
-            <a href="Victoria-Green-Resume.pdf" class="button ghost" target="_blank">Download Resume</a>
+            <a href="Victoria-Green-Resume.pdf" class="button ghost" target="_blank" rel="noopener">
+              Download Resume
+            </a>
           </div>
         </div>
-        
+
         <div class="hero-photos">
-          <img src="victoria-headshot.jpg" alt="Victoria Green" class="main-photo">
-          <img src="victoria-sidepicture.jpg" alt="Victoria working" class="side-photo">
+          <img src="victoria-headshot.jpg" alt="Portrait of Victoria Green" class="main-photo">
+          <img src="victoria-sidepicture.jpg" alt="Victoria working at desk" class="side-photo">
         </div>
+
       </div>
     </section>
 
@@ -51,9 +78,15 @@
       <div class="container">
         <span class="project-tag">Introduction</span>
         <h2>About Me</h2>
+
         <div class="about-text-content">
-          <p>Hello, I’m Victoria. I specialize in supporting organizations at the <strong>intersection of people, processes, and products</strong>.</p>
-          <p>I provide comprehensive administrative, operations, and customer service support, with a focus on maintaining structured workflows, enabling effective team collaboration, and ensuring clear, professional communication across both virtual and in-person environments.</p>
+          <p>
+            Hello, I’m Victoria. I specialize in supporting organizations at the 
+            <strong>intersection of people, processes, and products</strong>.
+          </p>
+          <p>
+            I provide comprehensive administrative, operations, and customer service support, with a focus on maintaining structured workflows, enabling effective team collaboration, and ensuring clear, professional communication across both virtual and in-person environments.
+          </p>
         </div>
       </div>
     </section>
@@ -62,31 +95,37 @@
       <div class="container">
         <span class="project-tag">Academic & Professional</span>
         <h2>Qualifications</h2>
+
         <div class="qual-grid">
+
           <div class="qual-card featured">
             <div class="qual-icon">🎓</div>
             <span>Academic Degree</span>
             <h3>BSc Biochemistry</h3>
             <p>Rivers State University</p>
           </div>
+
           <div class="qual-card">
             <div class="qual-icon">💻</div>
             <span>Certification</span>
             <h3>Virtual Assistant</h3>
             <p>ALX (2025)</p>
           </div>
+
           <div class="qual-card">
             <div class="qual-icon">👥</div>
             <span>Certification</span>
-            <h3>Human Resource Mgmt</h3>
+            <h3>Human Resource Management</h3>
             <p>LPMV (2025)</p>
           </div>
+
           <div class="qual-card">
             <div class="qual-icon">🛡️</div>
             <span>Compliance</span>
-            <h3>HSE Levels 1-3</h3>
+            <h3>HSE Levels 1–3</h3>
             <p>WSO (2024)</p>
           </div>
+
         </div>
       </div>
     </section>
@@ -94,18 +133,19 @@
     <section id="services" class="section">
       <div class="container">
         <h2>Services</h2>
+
         <div class="cards">
           <div class="card">
             <h3>Administration</h3>
-            <p>Precision calendar management, process documentation, and operational support.</p>
+            <p>Calendar management, documentation, and operational support.</p>
           </div>
           <div class="card">
-            <h3>People Ops</h3>
-            <p>Onboarding systems, SOP development, and team collaboration frameworks.</p>
+            <h3>People Operations</h3>
+            <p>Onboarding systems, SOP development, and team coordination.</p>
           </div>
           <div class="card">
             <h3>Customer Experience</h3>
-            <p>Support strategy, QA frameworks, and professional communication management.</p>
+            <p>Customer support, QA frameworks, and communication management.</p>
           </div>
         </div>
       </div>
@@ -114,16 +154,18 @@
     <section id="work" class="section alt">
       <div class="container">
         <h2>Portfolio Projects</h2>
+
         <div class="work-grid">
           <article class="work">
-            <div class="project-tag">Operations</div>
+            <span class="project-tag">Operations</span>
             <h3>Workflow Standardization</h3>
-            <p>Optimized internal project lifecycles, reducing administrative overhead by 30%.</p>
+            <p>Optimized internal workflows, reducing administrative overhead by 30%.</p>
           </article>
+
           <article class="work">
-            <div class="project-tag">Customer Care</div>
+            <span class="project-tag">Customer Care</span>
             <h3>CX Quality Framework</h3>
-            <p>Implemented a QA system that drove customer satisfaction from 82% to 92%.</p>
+            <p>Implemented a QA system that increased customer satisfaction from 82% to 92%.</p>
           </article>
         </div>
       </div>
@@ -132,22 +174,26 @@
     <section id="contact" class="section">
       <div class="container">
         <h2>Contact</h2>
+
         <div class="contact-grid">
           <div class="contact-card">
-            <span>Email</span>
+            <span>Email:</span>
             <a href="mailto:toriagreen778@gmail.com">toriagreen778@gmail.com</a>
           </div>
           <div class="contact-card">
-            <span>Phone</span>
-            <a href="tel:+2348106642766">08106642766</a>
+            <span>Phone:</span>
+            <a href="tel:+2348106642766">+234 810 664 2766</a>
           </div>
           <div class="contact-card">
             <span>Resume</span>
-            <a href="Victoria-Green-Resume.pdf" target="_blank">Download PDF</a>
+            <a href="Victoria-Green-Resume.pdf" target="_blank" rel="noopener">
+              Download PDF
+            </a>
           </div>
         </div>
       </div>
     </section>
+
   </main>
 
   <footer class="site-footer">
@@ -159,3 +205,4 @@
   <script src="script.js"></script>
 </body>
 </html>
+
